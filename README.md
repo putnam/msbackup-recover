@@ -7,7 +7,7 @@ recovers passwords from DOS 6.xx MSBACKUP backup catalogs
 3. install [z3](https://github.com/Z3Prover/z3) with `pip install z3-solver`
 
 # usage
-./msbackup-recovery <path to catalog file>
+./msbackup-recovery [path to catalog file]
 
 catalog files end with numbers like .001 or .002, etc. if you have a floppy backup you will probably want to first image your floppies, then pull the first catalog file off to run with this software. msbackup reads the header from the file and Z3 solves
 
