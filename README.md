@@ -2,9 +2,9 @@
 recovers passwords from DOS 6.xx MSBACKUP backup catalogs
 
 # setup
-download or clone this repo
-have python3 installed
-install [z3](https://github.com/Z3Prover/z3) with `pip install z3-solver`
+1. download or clone this repo
+2. have python3 installed
+3. install [z3](https://github.com/Z3Prover/z3) with `pip install z3-solver`
 
 # usage
 ./msbackup-recovery <path to catalog file>
