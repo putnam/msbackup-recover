@@ -118,6 +118,7 @@ def solve(hash):
     return out
 
 def get_hash_from_catalog(file):
+  # https://web.archive.org/web/20110718072254/https://www.fpns.net/willy/dosbkup.htm
   try:
     with open(file, 'rb') as f:
       f.seek(1)
