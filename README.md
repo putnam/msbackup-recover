@@ -1,5 +1,5 @@
 # msbackup-recover
-recovers passwords from DOS 6.xx MSBACKUP backup catalogs
+near-instantly recovers passwords from DOS 6.xx MSBACKUP backup catalogs
 
 ## setup
 1. download or clone this repo
