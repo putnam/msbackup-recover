@@ -16,7 +16,7 @@ MSBACKUP.EXE is a backup program for MS-DOS. In the DOS 6.xx days, MSBACKUP prov
 
 The password is "hashed" and stored in the header for the backup catalog, but files are not encrypted or modified. Technically, a restoration from a password-protected backup is possible by fiddling with the file headers.
 
-However, I thought it would be more fun to reverse engineer the password hashing algorithm and write something that cracks it.
+However, I thought it would be more fun to reverse engineer the password hashing algorithm and write something that cracks it. So I spent most of a day spinning up a VM with DOS 6, setting up remote debugging, and digging through the code in Ghidra. And it paid off!
 
 The password hash is a 10-byte ASCII string stored at offset 0x61 in catalogs created by this version of MSBACKUP. If there is no password, this area will be null.
 
